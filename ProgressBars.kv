@@ -1,0 +1,40 @@
+
+<ProgressBars>
+    canvas.before:
+        Color:
+            rgba:(0,0,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+
+        Label:
+            id:my_label
+            text:" 0% Progress"
+        ProgressBar:
+            id:my_progress
+            # set Default value
+            #value: .25
+            min:0
+            max:1
+            pos_hint: {'x':0}
+            siz_hint_x: .5
+
+        Button:
+            text:"Press Me"
+            on_press: root.press_it()
+
+
+
+
+
+
+
+
+
+
+

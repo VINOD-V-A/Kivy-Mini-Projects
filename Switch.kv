@@ -1,0 +1,28 @@
+
+<SwitchIt>
+    canvas.before:
+        Color:
+            rgba:(0,0,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+
+        Label:
+            id: my_label
+            font_size:32
+            text:" The Switch Is On!"
+
+        Switch:
+            active: True
+            font_size:32
+            on_active: root.switch_click(self,self.active)
+
+
+
+
+
+

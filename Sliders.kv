@@ -1,0 +1,34 @@
+
+<Sliders>
+    canvas.before:
+        Color:
+            rgba:(0,0,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+
+    slide_text: slider_label
+
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 50
+        spacing: 20
+
+        Label:
+            id: slider_label
+            text:"Slider the slider!"
+            font_size: 32
+
+        Slider:
+            min: 1
+            max: 50
+            step: 1
+            orientation: "horizontal"
+            on_value: root.slide_it(*args)
+
+
+
+
+
+

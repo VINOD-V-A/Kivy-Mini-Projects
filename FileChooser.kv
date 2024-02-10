@@ -1,0 +1,29 @@
+
+<FileChooser>
+    canvas.before:
+        Color:
+            rgba:(0,0,0,1)
+        Rectangle:
+            pos: self.pos
+            size: self.size
+    id : my_widget
+    BoxLayout:
+        orientation: "vertical"
+        size: root.width, root.height
+        padding: 50
+        spacing: 20
+
+        Image:
+            id: my_image
+            source: ""
+
+
+        FileChooserIconView:
+            id:filechooser
+            on_selection: my_widget.selected(filechooser.selection)
+
+
+
+
+
+

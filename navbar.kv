@@ -1,0 +1,38 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    MDTopAppBar:
+        title: "Bottom Navbar"
+        md_bg_color: (.2,.2,.2,1)
+        specific_text_color: 1,1,1,1
+    MDBottomNavigation:
+        #color
+        panel_color:  50/225, 26/225, 71/225,1
+        MDBottomNavigationItem:
+            markup: True
+            name: 'screen1'
+            text: 'YouTube'
+            icon: 'youtube'
+
+
+            MDLabel:
+                text: "Welcome to Youtube "
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen2'
+            text: 'Python'
+            icon: 'language-python'
+
+            MDLabel:
+                text: "Welcome to Python"
+                halign: 'center'
+
+        MDBottomNavigationItem:
+            name: 'screen3'
+            text: 'Instagram'
+            icon: 'instagram'
+
+            MDLabel:
+                text: "Instagram is here"
+                halign: 'center'
